@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+   <head>
+      <!-- include angular js-->
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular.min.js"></script>
+      <script src = "../module/studentController.js" ></script>
+      <style type="text/css" rel = "../styles/style.css"></style>
+   </head>
+  
+   <body>
+      <div ng-app = "mainApp" ng-controller="studentController">
+         <div ng-include = "'sub/main.html'"></div>
+         <div ng-include = "'sub/subject.html'"></div>
+      </div>
+      
+   </body>
+</html>
