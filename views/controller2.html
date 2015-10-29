@@ -20,7 +20,7 @@
       <script>
 
       var studentCtrlApp =  angular.module("studentCtrlApp",[]);
-      studentCtrlApp.controller("studentController",function($scope){
+      studentCtrlApp.controller("studentController",['$scope',function($scope){
          $scope.student = {
             firstName: "Mahesh",
             lastName: "Parashar",
@@ -33,7 +33,7 @@
                // return studentObject.firstName + " " + studentObject.lastName;
             }
          };
-      });
+      }]);
       </script>
    </body>
 </html>

@@ -64,7 +64,7 @@
       <script>
          var mainApp = angular.module("mainApp", []);
          
-         mainApp.controller('studentController', function($scope) {
+         mainApp.controller('studentController',['$scope',function($scope) {
             $scope.student = {
                firstName: "Mahesh",
                lastName: "Parashar",
@@ -82,7 +82,7 @@
                   return studentObject.firstName + " " + studentObject.lastName;
                }
             };
-         });
+         }]);
       </script>
    </body>
 </html>

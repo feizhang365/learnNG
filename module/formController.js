@@ -1,6 +1,6 @@
          var mainApp = angular.module("mainApp", []);
          
-         mainApp.controller('formController', function($scope) {
+         mainApp.controller('formController',['$scope', function($scope) {
             $scope.reset = function(){
                $scope.firstName = "Mahesh";
                $scope.lastName = "Parashar";
@@ -8,4 +8,4 @@
             }
             
             $scope.reset();
-         });
+         }]);

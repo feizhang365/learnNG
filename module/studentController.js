@@ -1,5 +1,5 @@
 var mainApp = angular.module("mainApp", []);
-mainApp.controller("studentController", function($scope) {
+mainApp.controller("studentController", ['$scope',function($scope) {
    $scope.student = {
       firstName: "Mahesh",
       lastName: "Parashar",
@@ -19,4 +19,4 @@ mainApp.controller("studentController", function($scope) {
          return studentObject.firstName + " " + studentObject.lastName;
       }
    };
-});
+}]);

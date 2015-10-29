@@ -11,10 +11,10 @@
       </div>
       
       <script>
-      	 angular.module("MyApp", []).controller("MyController", function($scope) {
+      	 angular.module("MyApp", []).controller("MyController", ['$scope',function($scope) {
             $scope.memo = {};
             $scope.memo.title = "AngularJS";
-         });
+         }]);
       </script>
    </body>
 </html>

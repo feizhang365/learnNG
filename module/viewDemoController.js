@@ -1,5 +1,5 @@
 var mainApp = angular.module("mainApp", ['ngRoute']);
-mainApp.config(['$routeProvider', function($routeProvider) {
+mainApp.config(['$routeProvider', ['$routeProvider',function($routeProvider) {
 	$routeProvider.when('/addStudent', {
 	   templateUrl: 'addStudent.html',
 	   controller: 'AddStudentController'
@@ -11,10 +11,10 @@ mainApp.config(['$routeProvider', function($routeProvider) {
 	});
 }]);
 
-mainApp.controller('AddStudentController', function($scope) {
+mainApp.controller('AddStudentController', ['$scope',function($scope) {
 	$scope.message = "This page will be used to display add student form";
-});
+}]);
 
-mainApp.controller('ViewStudentsController', function($scope) {
+mainApp.controller('ViewStudentsController', ['$scope',function($scope) {
 	$scope.message = "This page will be used to display all the students";
-});
+}]);
