@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- include angular js-->
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular.min.js"></script>
+      <script src = "https://cdnjscn.b0.upaiyun.com/libs/angular.js/1.2.18/angular-route.js"></script>
+      <script src = "inputcheckboxController.js" ></script>
+      <style>
+		 .my-form {
+		   -webkit-transition:all linear 0.5s;
+		   transition:all linear 0.5s;
+		   background: transparent;
+		 }
+		 .my-form.ng-invalid {
+		   background: red;
+		 }
+		</style>
+   </head>
+   
+   <body ng-app='inputcheckboxApp'>
+   	  	<h2>input check box</h2>
+		<form name="myForm" ng-controller="checkboxController">
+		  Value1: <input type="checkbox" ng-model="value1"> <br/>
+		  Value2: <input type="checkbox" ng-model="value2"
+		                 ng-true-value="'YES'" ng-false-value="'NO'"> <br/>
+		  <tt>value1 = {{value1}}</tt><br/>
+		  <tt>value2 = {{value2}}</tt><br/>
+		 </form>
+      
+   </body>
+</html>
+
