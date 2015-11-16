@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- include angular js-->
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular.min.js"></script>
+      <script src = "https://cdnjscn.b0.upaiyun.com/libs/angular.js/1.2.18/angular-route.js"></script>
+      <script src = "inputselectController.js" ></script>
+   </head>
+   
+   <body ng-app='mainApp'>
+   		<div ng-controller='MainCtrl'>
+			<select ng-model="selectedItemExact" ng-options=" item.name for item in sourceList">
+			</select>
+			<select ng-model="selectedItemSimilar" ng-options="item.name for item in sourceList">
+			</select>
+		</div>
+   </body>
+</html>
+
